@@ -1,20 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity"
+        android:orientation="vertical"
+        android:background="#C4FBF4">
 
-    <TextView
-            android:layout_width="wrap_content"
+    <ImageView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/txt"
-            android:text="Hell"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            android:src="@drawable/blow_it_up"
+            android:paddingTop="150dp"/>
 
-</android.support.constraint.ConstraintLayout>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="100dp"
+                android:id="@+id/cake"
+                android:src="@drawable/cake"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/candle"
+                android:src="@drawable/dyn_candle"
+                android:layout_alignRight="@id/cake"
+                android:paddingTop="315dp"
+                android:paddingRight="275dp"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fire1"
+                android:layout_alignRight="@id/cake"
+                android:paddingTop="230dp"
+                android:paddingRight="255dp"
+                android:id="@+id/fire1"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fire1"
+                android:layout_alignRight="@id/cake"
+                android:paddingTop="240dp"
+                android:paddingRight="300dp"
+                android:id="@+id/fire2"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fire1"
+                android:layout_alignRight="@id/cake"
+                android:paddingTop="230dp"
+                android:paddingRight="368dp"
+                android:id="@+id/fire3"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fire1"
+                android:layout_alignRight="@id/cake"
+                android:paddingTop="263dp"
+                android:paddingRight="422dp"
+                android:id="@+id/fire4"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fire1"
+                android:layout_alignRight="@id/cake"
+                android:paddingTop="230dp"
+                android:paddingRight="480dp"
+                android:id="@+id/fire5"/>
+
+
+    </RelativeLayout>
+</LinearLayout>

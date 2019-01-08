@@ -31,7 +31,7 @@ public class NotificationService extends Service {
         @Override
         public void onReceive(Context arg0, Intent intent) {
             temp = intent.getIntExtra(BatteryManager.EXTRA_TEMPERATURE,0);
-            if(myBatInfoReceiver.get_temp() >= 28.0) {
+            if(myBatInfoReceiver.get_temp() >= 20.0) {
                 task(true);
             }
         }
